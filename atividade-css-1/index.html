@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade CSS 1</title>
+  </head>
+
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    .primeira-div h1 {
+      border: 5px solid black;
+    }
+
+    .primeira-div h1 {
+      color: red;
+    }
+
+    .primeira-div h2 {
+      color: gray;
+    }
+
+    .primeira-div span {
+      color: black;
+    }
+
+    .segunda-div p {
+      color: black;
+      border: 2px solid red;
+    }
+
+    p {
+      color: blue;
+    }
+
+    .segunda-div h1 {
+      color: red;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    .form-1 label {
+      color: darkred;
+    }
+  </style>
+  <body>
+    <div class="primeira-div">
+      <h1>Card: Perfil de aprsentação</h1>
+      <img src="../img-atividade-1/fotoDePerfil.png" width="100" />
+
+      <h2>Nome: <span>Sérgio</span></h2>
+      <h2>Idade: <span>16</span></h2>
+      <h2>Cidade: <span>Luiziânia</span></h2>
+    </div>
+
+    <div class="segunda-div">
+      <h1>História</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic fuga et
+        adipisci magni autem earum laudantium ea sapiente itaque quidem cumque
+        iste, illum saepe iusto laboriosam vero nesciunt vitae quam? Lorem ipsum
+        dolor sit amet consectetur, adipisicing elit. Doloribus expedita natus
+        iste tempora repellat sunt, dolore itaque similique quos accusamus
+        dolorem voluptates, aliquid quam possimus id sequi facilis laborum
+        eveniet! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Debitis optio rerum tempore dolorem quos enim, quam quaerat minima ea
+        laborum doloribus omnis temporibus sit excepturi, sapiente obcaecati
+        asperiores soluta neque!
+      </p>
+    </div>
+
+    <h1>Formlário para suas informações</h1>
+    <form class="form-1">
+      <label for="numero">Número:</label>
+      <input
+        type="number"
+        name=""
+        id="number"
+        placeholder="ex: +5518997653420"
+      />
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name=""
+        placeholder="exemplo@exemplo.com.br"
+      />
+
+      <br />
+      <br />
+      <label for="semha">Senha:</label>
+      <input
+        type="password"
+        id="senha"
+        name=""
+        placeholder="Digite sua senha"
+      />
+
+      <br />
+      <br />
+      <label for="">Gênero:</label>
+      <input type="radio" name="genero" id="masculino" value="masculino" />
+      <label for="masculino">Masculino</label>
+
+      <input type="radio" name="genero" id="feminino" value="feminino" />
+      <label for="feminino">Feminino</label>
+
+      <input type="radio" name="genero" id="outros" value="outros" />
+      <label for="outros">Outros</label>
+
+      <br />
+      <br />
+
+      <textarea
+        name="descriçao"
+        id="descriçao"
+        placeholder="Descreva um pouco de você"
+      ></textarea>
+      <br />
+      <br />
+
+      <button type="submit">Enviar apresentação</button>
+    </form>
+  </body>
+</html>
